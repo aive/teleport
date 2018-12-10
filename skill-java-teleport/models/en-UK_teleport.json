@@ -1,0 +1,321 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "teleport",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "pumpkin",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "TeleportIntent",
+                    "slots": [],
+                    "samples": [
+                        "teleport me",
+                        "pumpkin"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": [
+                        "tell me more"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": [
+                        "next chapter"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": [
+                        "previous",
+                        "go back"
+                    ]
+                },
+                {
+                    "name": "MyStoryIsIntent",
+                    "slots": [
+                        {
+                            "name": "Story",
+                            "type": "LIST_OF_STORIES"
+                        },
+                        {
+                            "name": "number",
+                            "type": "LIST_OF_NUMBERS"
+                        }
+                    ],
+                    "samples": [
+                        "I want to hear a  {Story}",
+                        "a  {Story} please",
+                        "I want to hear  {Story}",
+                        "a  {Story}",
+                        "I want to hear {number} {Story}",
+                        "number {number} {Story} story",
+                        "Number {number} {Story} ",
+                        "Number {number} {Story}  please",
+                        "Number {number} please",
+                        "Number {number}",
+                        "I want to hear {number}",
+                        "{number}",
+                        "I want to hear {Story}",
+                        " {Story}"
+                    ]
+                },
+                {
+                    "name": "WhatsMyStoryIntent",
+                    "slots": [
+                        {
+                            "name": "STORY",
+                            "type": "LIST_OF_STORIES"
+                        },
+                        {
+                            "name": "NUMBER",
+                            "type": "LIST_OF_NUMBERS"
+                        }
+                    ],
+                    "samples": [
+                        "what story",
+                        "what's my story",
+                        "what is my story",
+                        "say my story",
+                        "tell me my story",
+                        "whats my favorite story",
+                        "what is my favorite story",
+                        "say my favorite story",
+                        "tell me my favorite story",
+                        "tell me what my favorite story is"
+                    ]
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": [
+                        "go down",
+                        "down",
+                        "down please",
+                        "scroll down"
+                    ]
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": [
+                        "up please",
+                        "go up",
+                        "up",
+                        "scroll up please",
+                        "scroll up"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MyStorySelectionIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me a story please",
+                        "tell me a story",
+                        "tell me other story",
+                        "choose another story",
+                        "choose story",
+                        "go to selection screen",
+                        "selection screen",
+                        "another story",
+                        "tell me another story"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_STORIES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "little",
+                                "synonyms": [
+                                    "little story"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kelpie",
+                                "synonyms": [
+                                    "kelpie story"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_NUMBERS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "TeleportIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                },
+                {
+                    "name": "MyStoryIsIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Story",
+                            "type": "LIST_OF_STORIES",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.550935776893.349830463881"
+                            }
+                        },
+                        {
+                            "name": "number",
+                            "type": "LIST_OF_NUMBERS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "WhatsMyStoryIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1199559994531"
+                    },
+                    "slots": [
+                        {
+                            "name": "STORY",
+                            "type": "LIST_OF_STORIES",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "NUMBER",
+                            "type": "LIST_OF_NUMBERS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1402002470426.1370611416575",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What kind of a story would you like to hear?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.91336049401",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you want to move on to chapter number {chapterNumber}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.550935776893.349830463881",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Say my favourite story is little"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1199559994531",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Your story is {STORY} . Am I correct?"
+                    }
+                ]
+            }
+        ]
+    }
+}

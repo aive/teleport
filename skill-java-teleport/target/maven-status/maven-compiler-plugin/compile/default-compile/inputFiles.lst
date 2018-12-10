@@ -1,0 +1,10 @@
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/handlers/CancelandStopIntentHandler.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/handlers/MyStoryIsIntentHandler.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/handlers/LaunchRequestHandler.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/handlers/FallBackIntentHandler.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/TeleportStreamHandler.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/handlers/SessionEndedRequestHandler.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/handlers/WhatsMyStoryIntentHandler.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/handlers/HelpIntentHandler.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/util/TeleportUtil.java
+/Users/aive/Documents/Uni/MSc_project/workspace/skill-java-teleport/src/com/amazon/ask/teleport/handlers/TeleportIntentHandler.java

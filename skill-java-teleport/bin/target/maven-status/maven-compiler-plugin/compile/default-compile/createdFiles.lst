@@ -1,0 +1,8 @@
+com/amazon/ask/airplanefacts/util/TeleportUtil.class
+com/amazon/ask/airplanefacts/handlers/HelpIntentHandler.class
+com/amazon/ask/airplanefacts/handlers/LaunchRequestHandler.class
+com/amazon/ask/airplanefacts/handlers/TeleportIntentHandler.class
+com/amazon/ask/airplanefacts/TeleportStreamHandler.class
+com/amazon/ask/airplanefacts/handlers/SessionEndedRequestHandler.class
+com/amazon/ask/airplanefacts/handlers/CancelandStopIntentHandler.class
+com/amazon/ask/airplanefacts/handlers/FallBackIntentHandler.class
