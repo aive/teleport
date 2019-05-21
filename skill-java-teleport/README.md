@@ -1,5 +1,5 @@
 # Alexa Skills Kit SDK Sample - Teleport
-An Interactive Story skill developed, based on Alexa Skillskit written Echo Show and Echo Spot in Java using the Alexa Skills Kit (ASK) SDK v2. Initially base on Alexa skill sample 'Airplane Facts' (weblink), but taken a bit further.
+An Interactive Story skill developed, based on Alexa Skillskit written to work on Echo Show and Echo Spot in Java using the Alexa Skills Kit (ASK) SDK v2. Initially base on Alexa skill sample 'Airplane Facts', but taken a bit further.
 
 ## Concepts
 This sample shows how to write Alexa skills that:
