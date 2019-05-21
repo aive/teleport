@@ -51,4 +51,4 @@ At this point, feel free to start experimenting with your Intent Schema as well 
 ### One-shot model:
     User: "Alexa, open Teleport"
     Alexa: "Welcome to Teleport, I can tell you stories about mythical creatures.
-    Would you like to hear a Kelpie story or Little story?"
+            Would you like to hear a Kelpie story or Little story?"
